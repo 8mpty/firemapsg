@@ -67,7 +67,7 @@ const TEAM_BRIEFS = {
   },
   BRAVO: {
     oic: 'LTA S. Kumar',
-    crew: ['COL T. K. Cheng', 'LTA R. Ali', 'SC P. Chen', 'SC Farhan Z.'],
+    crew: ['COL T. K. Cheng', 'LTA Z. Farhan', 'SC P. Chen', 'SC A. Raushan'],
     radio: 'Ops Ch 2',
     checkIn: '22:08',
     eta: 'On scene',
