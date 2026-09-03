@@ -21,7 +21,7 @@ const INCIDENT = {
 const TEAMS = [
   {
     id: 'ALPHA',
-    name: 'Alpha Team',
+    name: 'Section 1',
     role: 'Fire Attack',
     status: 'Advancing on Petrol Kiosk',
     color: RED,
@@ -30,7 +30,7 @@ const TEAMS = [
   },
   {
     id: 'BRAVO',
-    name: 'Bravo Team',
+    name: 'Section 2',
     role: 'Foam & Water Supply',
     status: 'Supplying from Foam Bay',
     color: BLUE,
@@ -39,7 +39,7 @@ const TEAMS = [
   },
   {
     id: 'CHARLIE',
-    name: 'Charlie Team',
+    name: 'Section 3',
     role: 'Search & Standby',
     status: 'Standing by — Admin Office',
     color: GREEN,
@@ -72,7 +72,7 @@ const TEAM_BRIEFS = {
     checkIn: '22:08',
     eta: 'On scene',
     objective:
-      'Establish foam and hydrant supply from Foam Bay to back up Alpha and protect the flammable storage area from exposure.',
+      'Establish foam and hydrant supply from Foam Bay to back up Section 1 and protect the flammable storage area from exposure.',
     updates: [
       { time: '22:08', text: 'Foam tender connected to hydrant' },
       { time: '22:10', text: 'Foam line charged and ready at Back Engine Bay' },
@@ -188,19 +188,23 @@ export default function TeamScreen({ go }) {
       {/* <Header title="Team Tracking" right={<Icon name="refresh" size={17} color={TEXT} />} /> */}
       <Header title="Team Tracking" />
       <div className="px-4 flex gap-4 mb-3 text-[12px] font-semibold lg:mx-auto lg:w-full lg:max-w-3xl lg:px-8" style={{ borderBottom: `1px solid ${BORDER}` }}>
-        {TABS.map((t) => (
-          <button
-            key={t}
-            onClick={() => setTab(t)}
-            className="pb-2"
-            style={{
-              color: tab === t ? RED : SUBTEXT,
-              borderBottom: tab === t ? `2px solid ${RED}` : '2px solid transparent',
-            }}
-          >
-            {t}
-          </button>
-        ))}
+        {TABS.map((t) => {
+          const team = TEAMS.find((x) => x.id === t);
+          const label = team ? team.name.toUpperCase() : t;
+          return (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className="pb-2"
+              style={{
+                color: tab === t ? RED : SUBTEXT,
+                borderBottom: tab === t ? `2px solid ${RED}` : '2px solid transparent',
+              }}
+            >
+              {label}
+            </button>
+          );
+        })}
       </div>
       <div className="flex-1 overflow-y-auto px-4 pb-4 lg:mx-auto lg:w-full lg:max-w-3xl lg:px-8">
         <OverviewCard />

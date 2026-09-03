@@ -10,7 +10,7 @@ export default function Header({ title, onBack, right }) {
             {/* <Icon name="chevronLeft" size={22} color={TEXT} /> */}
           </button>
         ) : (
-          <Icon name="menu" size={20} color={TEXT} />
+          <Icon name="menu" size={0} color={TEXT} />
         )}
         <span className="text-[17px] font-semibold" style={{ color: TEXT }}>{title}</span>
       </div>
