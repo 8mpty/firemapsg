@@ -1,9 +1,9 @@
 name: Build and Deploy to web-compiled
 
 on:
-  push:
-    branches:
-      - main
+#   push:
+#     branches:
+#       - main
   workflow_dispatch:
 
 permissions:
