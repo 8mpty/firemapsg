@@ -54,7 +54,7 @@ const TABS = ['ALL TEAMS', ...TEAMS.map((t) => t.id)];
 const TEAM_BRIEFS = {
   ALPHA: {
     oic: 'CPT S. Ilhan',
-    crew: ['LTA M. Firaaz', 'LTA M. Ariq', 'LTA H. Irfan', 'WO A. Hameed'],
+    crew: ['LTA M. Raz', 'LTA M. Ariq', 'LTA H. Irfan', 'WO A. Hameed'],
     radio: 'Ops Ch 1',
     checkIn: '22:09',
     eta: 'On scene',

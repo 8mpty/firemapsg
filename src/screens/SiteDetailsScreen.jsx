@@ -28,7 +28,7 @@ const SYSTEMS = [
 ];
 
 const CONTACTS = [
-  { label: 'Officer in Charge', value: 'DSC SGT Khairin', icon: 'users' },
+  { label: 'Officer in Charge', value: 'DSC M. Khairin', icon: 'users' },
   { label: 'Watchroom', value: '+65 6865 4180', icon: 'signal' },
   { label: 'Ops Channels', value: 'Ops Ch 1 / 2 / 3', icon: 'radio' },
 ];
