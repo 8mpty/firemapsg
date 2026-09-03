@@ -46,9 +46,9 @@ export default function FireStationFloorMap({ onPetrolClick, focusRiser }) {
 
       <rect x="160" y="320" width="460" height="240" fill="none" stroke={BORDER} strokeWidth="1.2" />
       <text x="390" y="425" fill={TEXT} fontSize="26" fontWeight="bold" textAnchor="middle">MAIN ENGINE BAY</text>
-      <rect x="490" y="460" width="120" height="88" fill="none" stroke={BORDER} strokeWidth="1" strokeDasharray="5 3" />
-      <text x="550" y="502" fill={SUBTEXT} fontSize="17" fontWeight="bold" textAnchor="middle">WATCHROOM</text>
-      <text x="550" y="522" fill={SUBTEXT} fontSize="17" fontWeight="bold" textAnchor="middle">RECEPTION</text>
+      <rect x="170" y="330" width="120" height="88" fill="none" stroke={BORDER} strokeWidth="1" strokeDasharray="5 3" />
+      <text x="231" y="370" fill={SUBTEXT} fontSize="17" fontWeight="bold" textAnchor="middle">WATCHROOM</text>
+      <text x="232" y="390" fill={SUBTEXT} fontSize="17" fontWeight="bold" textAnchor="middle">RECEPTION</text>
 
       {/* Admin Office */}
 

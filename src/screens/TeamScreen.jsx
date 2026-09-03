@@ -26,7 +26,7 @@ const TEAMS = [
     status: 'Advancing on Petrol Kiosk',
     color: RED,
     location: 'Petrol Kiosk',
-    markerStyle: { left: '22%', top: '20%' },
+    markerStyle: { left: '22%', top: '25%' },
   },
   {
     id: 'BRAVO',
@@ -35,7 +35,7 @@ const TEAMS = [
     status: 'Supplying from Foam Bay',
     color: BLUE,
     location: 'Foam Bay',
-    markerStyle: { left: '58%', top: '55%' },
+    markerStyle: { left: '60%', top: '25%' },
   },
   {
     id: 'CHARLIE',
@@ -43,9 +43,9 @@ const TEAMS = [
     role: 'Search & Standby',
     status: 'Standing by — Admin Office',
     color: GREEN,
-    location: 'Admin / Back Bay',
+    location: 'Admin / Main Bay',
     riser: true,
-    markerStyle: { left: '10%', bottom: '6%' },
+    markerStyle: { left: '57%', top: '58%' },
   },
 ];
 
@@ -185,7 +185,8 @@ export default function TeamScreen({ go }) {
 
   return (
     <div className="flex flex-col h-full lg:min-h-screen">
-      <Header title="Team Tracking" right={<Icon name="refresh" size={17} color={TEXT} />} />
+      {/* <Header title="Team Tracking" right={<Icon name="refresh" size={17} color={TEXT} />} /> */}
+      <Header title="Team Tracking" />
       <div className="px-4 flex gap-4 mb-3 text-[12px] font-semibold lg:mx-auto lg:w-full lg:max-w-3xl lg:px-8" style={{ borderBottom: `1px solid ${BORDER}` }}>
         {TABS.map((t) => (
           <button
