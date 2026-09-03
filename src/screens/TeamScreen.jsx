@@ -53,8 +53,8 @@ const TABS = ['ALL TEAMS', ...TEAMS.map((t) => t.id)];
 
 const TEAM_BRIEFS = {
   ALPHA: {
-    oic: 'LTA M. Tan',
-    crew: ['LTA M. Tan', 'LTA N. Lim', 'SC K. Raj', 'SC D. Wong'],
+    oic: 'CPT S. Ilhan',
+    crew: ['LTA M. Firaaz', 'LTA M. Ariq', 'LTA H. Irfan', 'WO A. Hameed'],
     radio: 'Ops Ch 1',
     checkIn: '22:09',
     eta: 'On scene',
@@ -66,7 +66,7 @@ const TEAM_BRIEFS = {
     ],
   },
   BRAVO: {
-    oic: 'LTA S. Kumar',
+    oic: 'AC Q. Lu De',
     crew: ['COL T. K. Cheng', 'LTA Z. Farhan', 'SC P. Chen', 'SC A. Raushan'],
     radio: 'Ops Ch 2',
     checkIn: '22:08',
@@ -74,7 +74,7 @@ const TEAM_BRIEFS = {
     objective:
       'Establish foam and hydrant supply from Foam Bay to back up Section 1 and protect the flammable storage area from exposure.',
     updates: [
-      { time: '22:08', text: 'Foam tender connected to hydrant' },
+      { time: '22:08', text: 'Foam tender connected' },
       { time: '22:10', text: 'Foam line charged and ready at Back Engine Bay' },
     ],
   },
