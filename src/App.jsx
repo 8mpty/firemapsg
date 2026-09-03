@@ -9,6 +9,7 @@ import HazardsScreen from './screens/HazardsScreen';
 import TeamScreen from './screens/TeamScreen';
 import FireStationScreen from './screens/FireStationScreen';
 import RiserScreen from './screens/RiserScreen';
+import SiteDetailsScreen from './screens/SiteDetailsScreen';
 import { DEMO_CREDENTIALS, AUTH_STORAGE_KEY } from './data';
 import { BG, SUBTEXT } from './theme';
 import './App.css';
@@ -23,6 +24,7 @@ const SCREENS = {
   team: TeamScreen,
   firestation: FireStationScreen,
   riser: RiserScreen,
+  sitedetails: SiteDetailsScreen,
 };
 
 function getRememberedCredentials() {

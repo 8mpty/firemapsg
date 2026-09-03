@@ -48,7 +48,7 @@ export default function FireStationScreen({ go }) {
           <QuickAction icon="route" title="Route to Petrol Kiosk" sub="Fastest Access" color={BLUE} onClick={() => go('navigation')} />
           <QuickAction icon="shieldAlert" title="Hazard Zones" sub="Fuel & foam storage" color={AMBER} onClick={() => go('hazards')} />
           <QuickAction icon="building" title="Nearest Riser" sub="Back engine bay" color={GREEN} onClick={() => go('riser')} />
-          <QuickAction icon="info" title="Site Details" sub="Operations info" color={SUBTEXT} onClick={() => go('buildings')} />
+          <QuickAction icon="info" title="Site Details" sub="Operations info" color={SUBTEXT} onClick={() => go('sitedetails')} />
         </div>
       </div>
       <BottomNav screen="dashboard" go={go} />

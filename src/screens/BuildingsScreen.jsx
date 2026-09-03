@@ -11,23 +11,25 @@ export default function BuildingsScreen({ go }) {
   const [tab, setTab] = useState('All Buildings');
   const [query, setQuery] = useState('');
   const [favourites, setFavourites] = useState(() => BUILDINGS.filter((b) => b.fav).map((b) => b.id));
-  const [recentIds, setRecentIds] = useState([3, 1]);
+  const [recentIds, setRecentIds] = useState([5]);
 
   const toggleFav = (id) => {
     setFavourites((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]));
   };
 
   const openBuilding = (id) => {
-    setRecentIds((prev) => [id, ...prev.filter((r) => r !== id)].slice(0, 5));
     const b = BUILDINGS.find((x) => x.id === id);
-    go(b && b.fireStation ? 'firestation' : 'dashboard');
+    // Only the fire station has a floor plan / site view – other buildings do nothing.
+    if (!b || !b.fireStation) return;
+    setRecentIds((prev) => [id, ...prev.filter((r) => r !== id)].slice(0, 5));
+    go('firestation');
   };
 
   const baseList =
     tab === 'Favourites'
       ? BUILDINGS.filter((b) => favourites.includes(b.id))
       : tab === 'Recent'
-      ? BUILDINGS.filter((b) => recentIds.includes(b.id))
+      ? recentIds.map((id) => BUILDINGS.find((b) => b.id === id)).filter(Boolean)
       : BUILDINGS;
 
   const q = query.trim().toLowerCase();

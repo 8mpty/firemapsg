@@ -15,11 +15,11 @@ export const HAZARDS = [
 ];
 
 export const BUILDINGS = [
-  { id: 1, name: 'Block 123, AMK Ave 1', meta: 'Residential (HDB) · 15 Floors', fav: true },
+  { id: 1, name: 'Block 123, AMK Ave 1', meta: 'Residential (HDB) · 15 Floors', fav: false },
   { id: 2, name: 'Northpoint City', meta: 'Commercial · 6 Floors', fav: false },
   { id: 3, name: 'Yishun Community Hospital', meta: 'Institutional · 8 Floors', fav: false },
   { id: 4, name: 'Blk 88, Toa Payoh Lor 4', meta: 'Residential (HDB) · 12 Floors', fav: false },
-  { id: 5, name: 'Tuas Fire Station', meta: 'Facility · Ground Floor Incident', fav: false, fireStation: true },
+  { id: 5, name: 'Tuas Fire Station', meta: 'Facility · Ground Floor Incident', fav: true, fireStation: true },
 ];
 
 export const STEPS = [

@@ -53,7 +53,7 @@ export default function DashboardScreen({ go }) {
           <QuickAction icon="route" title="Route to Fire" sub="Best Access Path" color={BLUE} onClick={() => go('navigation')} />
           <QuickAction icon="building" title="Nearest Riser" sub="22 m away" color={GREEN} onClick={() => go('riser')} />
           <QuickAction icon="shieldAlert" title="Hazard Zones" sub="2 on this floor" color={AMBER} onClick={() => go('hazards')} />
-          <QuickAction icon="info" title="Building Info" sub="Details & Systems" color={SUBTEXT} onClick={() => go('buildings')} />
+          <QuickAction icon="info" title="Building Info" sub="Details & Systems" color={SUBTEXT} onClick={() => go('sitedetails')} />
         </div>
       </div>
       <BottomNav screen="dashboard" go={go} />
